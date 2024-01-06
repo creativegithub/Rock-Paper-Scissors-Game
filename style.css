@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #87A7D9;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+h1{
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.choises{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.choice{
+    height: 13rem;
+    width: 13rem;
+    border: solid 5px #e23a86;
+    border-radius: 50%;
+    gap: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rock{
+    font-size: 5rem;
+    color: #e23a86;
+}
+
+#rock:hover{
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+    color: #fff;
+    border:solid 15px #e23a86;;
+}
+
+#paper{
+    font-size: 5rem;
+    border-color: #fda085;
+    color: #fda085;
+}
+
+#paper:hover{
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: #fff;
+    border: solid 15px #fda085;
+}
+
+#scissors{
+    font-size: 5rem;
+    border-color: #1e3c72;
+    color: #1e3c72;
+}
+
+#scissors:hover{
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    color: #fff;
+    border: solid 15px #1e3c72;
+}
+
+.score-board{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-color: #87A7D9;
+    border-radius: 2rem;
+    gap: 5rem;
+    font-size: 2rem;
+}
+
+.user-score, .comp-score{
+    font-size: 4rem;
+}
+
+.msg-container{
+    margin-top: 2rem;
+}
+
+.msg{
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: inline-block;
+}
+
+@media(max-width:680px){
+    .choice{
+        width: 10rem;
+        height: 10rem;
+    }
+    #rock{
+        font-size: 3.5rem;
+    }
+    #paper{
+        font-size: 3.5rem;
+    }
+    #scissors{
+        font-size: 3.5rem;
+    }
+}
+
+@media(max-width:480px){
+    .choice{
+        width: 8rem;
+        height: 8rem;
+    }
+    #rock{
+        font-size: 2rem;
+    }
+    #paper{
+        font-size: 2rem;
+    }
+    #scissors{
+        font-size: 2rem;
+    }
+    .score-board{
+        font-size: 1rem;
+    }
+    .user-score, .comp-score{
+        font-size: 2rem;
+    }
+    .msg{
+    font-size: 1.5rem;
+    }
+}
